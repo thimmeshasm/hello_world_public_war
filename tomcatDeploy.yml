@@ -12,10 +12,10 @@
 
   - name: download war file
     ansible.builtin.get_url:
-      url: https://shstechacademymay23.jfrog.io/artifactory/generic-local/webapp-${BUILD_NUMBER}.war
+      url: https://thimmeshasm.jfrog.io/artifactory/test/webapp-22.war
       dest: /home/tomcat/sourcefile/webapp.war
-      username: siddesh
-      password: Siddu@9880
+      username: thimmeshasm18@gmail.com
+      password: Shimoga@461995
 
   - name: create directory with a date in name
     file: 
