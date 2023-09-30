@@ -5,10 +5,10 @@
       shell: docker login -u thimmeshasm18@gmail.com -p Shimoga@461995 thimmeshasm.jfrog.io     
     
     - name: pull an image
-      shell: docker pull thimmeshasm.jfrog.io/sampledockeruplaod/newimage:31
+      shell: docker pull thimmeshasm.jfrog.io/docker/docker_practice:{{ BUILD_NUMBER }}
 
-    - name: remove container
-      shell: docker rm -f devopsAppDeploy
+   # - name: remove container
+    #  shell: docker rm -f devopsAppDeploy
         
     - name: create a application container
       shell: docker run -id --name devopsAppDeploy -p 8111:8080 thimmeshasm.jfrog.io/sampledockeruplaod/newimage:31
