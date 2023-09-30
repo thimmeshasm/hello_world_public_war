@@ -1,7 +1,6 @@
 ---
 - hosts: websever
   tasks:
-
     -name: chnage permission 
      shell: chmod 777 /var/run/docker.sock
     #- name: login to jfrog
