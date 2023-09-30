@@ -13,7 +13,7 @@
 
   - name: download war file
     ansible.builtin.get_url:
-      url: https://thimmeshasm.jfrog.io/artifactory/test/webapp-'{{build_number}}'.war
+      url: https://thimmeshasm.jfrog.io/artifactory/test/webapp-{{build_number}}.war
       dest: /home/tomcat/sourcefile/webapp.war
       username: thimmeshasm18@gmail.com
       password: Shimoga@461995
